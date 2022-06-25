@@ -9,6 +9,7 @@ const Landing = () => {
             
            
             background: `url(${bg}) no-repeat`,
+            height:'50%',
             backgroundPosition: "center",
             
      
