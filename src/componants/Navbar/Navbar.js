@@ -32,7 +32,7 @@ const Navbar = ({children}) => {
                 <li><NavLink className='rounded-lg' to='/'>Home</NavLink></li>
                 
           {
-            admin && <li><NavLink to='/dashboard'>DashBoard</NavLink></li>
+            admin && <li><NavLink to='/dashboard/add-service'>DashBoard</NavLink></li>
           }
                 
                 <li><NavLink className='rounded-lg' to='/catagory'>Catagory</NavLink></li>
@@ -57,6 +57,9 @@ const Navbar = ({children}) => {
           <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
          
           <li><NavLink className='rounded-lg' to='/'>Home</NavLink></li>
+          {
+            admin && <li><NavLink to='/dashboard/add-service'>DashBoard</NavLink></li>
+          }
                 
                 <li><NavLink className='rounded-lg' to='/catagory'>Catagory</NavLink></li>
                 <li><NavLink className='rounded-lg' to='/about'>About</NavLink></li>

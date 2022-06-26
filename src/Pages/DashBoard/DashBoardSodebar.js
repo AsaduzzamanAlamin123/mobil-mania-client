@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const DashBoardSodebar = ({children}) => {
     return (
@@ -17,8 +18,9 @@ const DashBoardSodebar = ({children}) => {
           <label for="my-drawer-2" class="drawer-overlay"></label> 
           <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
            
-            <li><a>Sidebar Item 1</a></li>
-            <li><a>Sidebar Item 2</a></li>
+            <li><NavLink className='mb-5 btn btn-outline' to='/dashboard/add-service'>Add Service</NavLink></li>
+            <li><NavLink className='mb-5 btn btn-outline' to='/dashboard/add-admin'>Add Admin</NavLink></li>
+            
           </ul>
         
         </div>

@@ -10,6 +10,8 @@ import RequireAuth from './routes/RequireAuth';
 import { privetRoute } from './routes/privetRoute';
 import AdminRoute from './routes/AdminRoute';
 import DashBoard from './Pages/DashBoard/DashBoard';
+import AddService from './Pages/DashBoard/AddService';
+import AddAdmin from './Pages/DashBoard/AddAdmin';
 
 
 function App() {
@@ -32,7 +34,10 @@ function App() {
           }
           </Route>
           <Route element={<AdminRoute></AdminRoute>}>
-            <Route path='/dashboard' element={<DashBoard></DashBoard>}></Route>
+            <Route path='/dashboard' element={<DashBoard></DashBoard>}>
+              <Route path='add-service' element={<AddService></AddService>}></Route>
+              <Route path='add-admin' element={<AddAdmin></AddAdmin>}></Route>
+            </Route>
           </Route>
         
       </Routes>
