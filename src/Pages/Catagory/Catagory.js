@@ -1,9 +1,20 @@
 import React from 'react';
+import CtagorySidebar from './CtagorySidebar';
+
 
 const Catagory = () => {
     return (
         <div>
-            <h2>Catagory</h2>
+             <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"> <h2 className=' flex justify-center mt-40 text-6xl font-mono text-primary'>This is catagory page <br /> Choose Your Favourite Catageroy</h2></div>
+            
+
+              <CtagorySidebar>
+             
+              </CtagorySidebar>
+          
+        
         </div>
     );
 };

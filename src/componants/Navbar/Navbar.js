@@ -32,7 +32,7 @@ const Navbar = ({children}) => {
                 <li><NavLink className='rounded-lg' to='/'>Home</NavLink></li>
                 
           {
-            admin && <li><NavLink to='/dashboard/add-service'>DashBoard</NavLink></li>
+            admin && <li><NavLink to='/dashboard/add-service' className='rounded-lg'>DashBoard</NavLink></li>
           }
                 
                 <li><NavLink className='rounded-lg' to='/catagory'>Catagory</NavLink></li>
@@ -58,7 +58,7 @@ const Navbar = ({children}) => {
          
           <li><NavLink className='rounded-lg' to='/'>Home</NavLink></li>
           {
-            admin && <li><NavLink to='/dashboard/add-service'>DashBoard</NavLink></li>
+            admin && <li><NavLink to='/dashboard/add-service' className='rounded-lg'>DashBoard</NavLink></li>
           }
                 
                 <li><NavLink className='rounded-lg' to='/catagory'>Catagory</NavLink></li>
