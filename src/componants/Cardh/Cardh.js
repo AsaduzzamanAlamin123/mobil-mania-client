@@ -5,8 +5,8 @@ import mobile3 from '../../images/mobile4.webp'
 
 const Cardh = () => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5   mt-10 mb-20 sm:mb-10 ml-24'>
-            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  mt-10 mb-20 sm:mb-10 sm:ml-24 '>
+            <div class="card card-compact w-full sm:w-96 bg-base-100 shadow-xl ">
   <figure><img src={mobile3} className='h-56 w-96' alt="Shoes" /></figure>
   <div class="card-body">
   <h2 className="text-center text-4xl font-mono text-accent">Camera!</h2>
@@ -16,7 +16,7 @@ const Cardh = () => {
     </div>
   </div>
 </div>
-            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <div class="card card-compact w-full sm:w-96 bg-base-100 shadow-xl">
   <figure><img src={mobile1} className='h-56 w-96' alt="Shoes" /></figure>
   <div class="card-body">
     <h2 className="text-center text-4xl font-mono text-accent">Head Phone</h2>
@@ -26,7 +26,7 @@ const Cardh = () => {
     </div>
   </div>
 </div>
-            <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <div class="card card-compact w-full sm:w-96 bg-base-100 shadow-xl">
   <figure><img src={mobile2} className='h-56 w-96' alt="Shoes" /></figure>
   <div class="card-body">
   <h2 className="text-center text-4xl font-mono text-accent">information share!</h2>

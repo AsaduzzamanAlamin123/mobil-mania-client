@@ -32,19 +32,13 @@ const Navbar = ({children}) => {
                 <li><NavLink className='rounded-lg' to='/'>Home</NavLink></li>
                 
           {
-            admin && <li><NavLink to='/dashboard/add-service' className='rounded-lg'>DashBoard</NavLink></li>
+            admin && <li><NavLink to='/dashboard' className='rounded-lg'>DashBoard</NavLink></li>
           }
                 
                 <li><NavLink className='rounded-lg' to='/catagory'>Catagory</NavLink></li>
                 <li><NavLink className='rounded-lg' to='/about'>About</NavLink></li>
                 <li><NavLink className='rounded-lg' to='/login'>Log In</NavLink></li>
-                <li class="dropdown dropdown-hover dropdown-end">
-  <label tabindex="0" class="btn m-1 rounded-lg ">Book Now</label>
-  <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-    <li><a>Item 1</a></li>
-    <li><a>Item 2</a></li>
-  </ul>
-</li>
+               
                 
               </ul>
             </div>
