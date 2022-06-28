@@ -13,7 +13,7 @@
         "RADIO": "",
         "USB": "",
         "OTG":"available",
-        "USB Type-C":"available",
+        "USBType-C":"available",
         "NFC":"available",
         "Style": "",
         "Material": "",
@@ -40,7 +40,7 @@
         "Processor": "",
         "GPU": "",
         "ROM": "",
-        "3.5mm Jack":"availavle",
+        "3.5mmJack":"availavle",
         "Featurees":"Loudspeaker",
         "Fingerprint": "",
         "FaceUnlock": "",
@@ -55,3 +55,7 @@
         "discoveredCountry": "Elsie Reynolds"
       }
 ]
+
+
+
+

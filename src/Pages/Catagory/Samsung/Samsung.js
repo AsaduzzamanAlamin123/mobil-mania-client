@@ -18,7 +18,7 @@ const Samsung = () => {
                 samsungs.map(samsung => <SamsungShow samsung={samsung}></SamsungShow>)
             }
            </div>
-            <h2> <Link to='/catagory'>back to catagory</Link></h2>
+            <h2 className='text-center font-thin font-mono text-blue-700 mt-5 mb-5'> <Link to='/catagory'>back to catagory</Link></h2>
         </div>
     );
 };

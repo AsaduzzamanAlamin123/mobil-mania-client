@@ -15,7 +15,9 @@ const SamsungShow = ({samsung}) => {
           
           
            
-            <Link className='btn btn-primary btn-full' to={`/samsung/${_id}`}>See Detailes</Link>
+           <div className=''>
+           <Link className='btn btn-primary w-full   ' to={`/samsung/${_id}`}>See Detailes</Link>
+           </div>
             {/* {`/update/${user._id}`} */}
       
       
