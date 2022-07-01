@@ -13,7 +13,7 @@ const Iphone = () => {
     return (
         <div>
           
-           <div className='grid sm:grid-cols-1 mb:grid-cols-2 lg:grid-cols-3 mt-4 w-4/5 mx-auto gap-5'>
+           <div className='grid sm:grid-cols-1 mb:grid-cols-2 lg:grid-cols-3 mt-4 w-full mx-auto gap-5'>
            {
                 iphones.map(iphone => <IphoneShow iphone={iphone}></IphoneShow>)
             }

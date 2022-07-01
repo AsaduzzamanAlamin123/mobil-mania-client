@@ -1,18 +1,25 @@
 import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useParams } from 'react-router-dom';
+import auth from '../../../firebase.init';
 
-const SamsungDetailes = () => {
-    const [detailes , setDetailes] = useState({});
+const SamsungDet = () => {
+    
+    const {samsungId} = useParams();
+    
+    const [detailes , setDetailes]= useState({})
     console.log(detailes);
-    const { samsungId } = useParams();
-
     useEffect(()=>{
         fetch(`http://localhost:5000/samsungs/${samsungId}`)
         .then(res=>res.json())
         .then(data=>setDetailes(data))
+
     },[])
+    
     return (
-       <div>
+        <div>
+
+             <div>
          <div className='grid sm:grid-cols-1 lg:grid-cols-2'>
            <div className='flex justify-center'>
                 <img src={detailes.picture} alt="" />
@@ -427,7 +434,8 @@ const SamsungDetailes = () => {
         </div>
         
        </div>
+        </div>
     );
 };
 
-export default SamsungDetailes;
+export default SamsungDet;

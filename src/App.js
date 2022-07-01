@@ -25,6 +25,7 @@ import Vivooo from './Pages/DashBoard/AddService/Vivooo';
 import Tecnooo from './Pages/DashBoard/AddService/Tecnooo';
 import Motorolaaa from './Pages/DashBoard/AddService/Motorolaaa';
 import Footer from './Pages/Home/Footer';
+import Oppo from './Pages/DashBoard/AddService/Oppo';
 
 
 
@@ -51,6 +52,7 @@ function App() {
             <Route path='/dashboard' element={<DashBoard></DashBoard>}>
               <Route path='iphoneee' element={<Iphoneee></Iphoneee>}></Route>
               <Route path='samsunggg' element={<Samsunggg></Samsunggg>}></Route>
+              <Route path='oppo' element={<Oppo></Oppo>}></Route>
               <Route path='xiomiii' element={<Xiomiii></Xiomiii>}></Route>
               <Route path='nokiaaa' element={<Nokiaaa></Nokiaaa> }></Route>
               <Route path='infinixxx' element={<Infinixxx></Infinixxx>}></Route>

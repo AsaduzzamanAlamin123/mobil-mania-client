@@ -26,7 +26,8 @@ const DashBoardSodebar = ({children}) => {
   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
     <li><NavLink className='mb-0.5' to='/dashboard/iphoneee'>Iphone</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/samsunggg'>Samsung</NavLink></li>
-    <li><NavLink className='mb-0.5' to='/dashboard/xiomiii'>Xiomi</NavLink></li>
+    <li><NavLink className='mb-0.5' to='/dashboard/oppo'>Oppo</NavLink></li>
+    <li><NavLink className='mb-0.5' to='/dashboard/xiomi'>Xiomi</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/nokiaaa'>Nokia</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/infinixxx'>Infinix</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/waltonnn'>Walton</NavLink></li>

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const OppoShow = ({singled}) => {
-    const {name , picture , quantity ,price , _id} = singled;
+const XiomiShow = ({single}) => {
+    const {name , picture , quantity ,price , _id} = single;
     return (
         <div>
         <div class="card w-full h-96  bg-base-100 shadow-xl" >
@@ -17,7 +17,7 @@ const OppoShow = ({singled}) => {
 </div>
 <div className='btn-holder'>
 
-<Link className='w-full btn ' to={`/oppo/${_id}`}>See Detailes</Link>
+<Link className='w-full btn ' to={`/xiomi/${_id}`}>See Detailes</Link>
 
 {/* to={`/iphone/${_id}`} */}
 </div>
@@ -28,4 +28,4 @@ const OppoShow = ({singled}) => {
     );
 };
 
-export default OppoShow;
+export default XiomiShow;

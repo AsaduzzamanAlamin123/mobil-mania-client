@@ -30,7 +30,7 @@ const CtagorySidebar = ({children}) => {
             <li><NavLink className='btn btn-outline mb-5' to='/iphone'><FcIphone className='text-xl'></FcIphone>Iphone</NavLink></li>
             <li><NavLink className='btn btn-outline mb-5' to='/samsung'><SiSamsung className='text-xl'></SiSamsung> Samsung</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/oppo'><MdCropPortrait></MdCropPortrait> Oppo</NavLink> </li>
-            <li><NavLink className='btn btn-outline mb-5' to='/xiaomi'><BiMobileVibration></BiMobileVibration> Xiaomi</NavLink> </li>
+            <li><NavLink className='btn btn-outline mb-5' to='/xiomi'><BiMobileVibration></BiMobileVibration> Xiaomi</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/vivo'><HiOutlineDeviceMobile></HiOutlineDeviceMobile> Vivo</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/realme'><Md1XMobiledata></Md1XMobiledata> Realme</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/walton'><SiIconify></SiIconify> Walton</NavLink> </li>

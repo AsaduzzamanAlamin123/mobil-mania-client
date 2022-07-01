@@ -5,7 +5,8 @@ const IphoneShow = ({iphone}) => {
     console.log(iphone);
     const {name , picture , quantity , rating ,price , Network , _id} = iphone;
     return (
-        <div class="card  bg-base-100 shadow-xl" data-aos="flip-left">
+        <div class="card w-full bg-base-100 shadow-xl" >
+          
   <figure><img className='w-full' src={picture} alt="Shoes" /></figure>
   <div class="card-body">
     <h2 class="text-cventer text-primary text-3xl font-bold font-serif">{name}</h2>
