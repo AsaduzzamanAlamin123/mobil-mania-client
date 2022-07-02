@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const DashBoardSodebar = ({children}) => {
     return (
-        <div class="drawer drawer-mobile mt-5 fixed h-full">
+        <div class="drawer drawer-mobile mt-0 fixed h-full">
         <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col items-center justify-center">
           {/* <!-- Page content here --> */}
@@ -29,6 +29,7 @@ const DashBoardSodebar = ({children}) => {
     <li><NavLink className='mb-0.5' to='/dashboard/oppo'>Oppo</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/xiomi'>Xiomi</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/nokiaaa'>Nokia</NavLink></li>
+    <li><NavLink className='mb-0.5' to='/dashboard/symphonyyy'>Symphony</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/infinixxx'>Infinix</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/waltonnn'>Walton</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/realmeee'>Realme</NavLink></li>

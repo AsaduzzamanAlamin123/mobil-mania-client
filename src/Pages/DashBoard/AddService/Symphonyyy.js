@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Oppo = () => {
-    const handleOppoUser = event =>{
+const Symphonyyy = () => {
+    const handleSymphonyUser = event =>{
         event.preventDefault();
         const FirstRelease = event.target.FirstRelease.value;
         console.log(FirstRelease);
@@ -27,8 +27,8 @@ const Oppo = () => {
         console.log(USB);
         const OTG = event.target.OTG.value;
         console.log(OTG);
-        const USBTypeC = event.target.USBTypeC.value;
-        console.log(USBTypeC);
+        // const USBTypeC = event.target.USBTypeC.value;
+        // console.log(USBTypeC);
     
     
     
@@ -84,10 +84,10 @@ const Oppo = () => {
         console.log(GPU);
         const ROM = event.target.ROM.value;
         console.log(ROM);
-        const MicroSDSlot = event.target.MicroSDSlot.value;
-        console.log(MicroSDSlot);
-        const k35mmJack = event.target.k35mmJack.value;
-        console.log(k35mmJack);
+        // const MicroSDSlot = event.target.MicroSDSlot.value;
+        // console.log(MicroSDSlot);
+        // const k35mmJack = event.target.k35mmJack.value;
+        // console.log(k35mmJack);
         const Featurees = event.target.Featurees.value;
         console.log(Featurees);
         
@@ -126,7 +126,7 @@ const Oppo = () => {
           RADIO,
           USB,
           OTG,
-          USBTypeC,
+          // USBTypeC,
           NFC ,
           Style,
           Material,
@@ -153,8 +153,8 @@ const Oppo = () => {
           Processor,
           GPU,
           ROM,
-          MicroSDSlot,
-          k35mmJack,
+          // MicroSDSlot,
+          // k35mmJack,
           Featurees,
           Fingerprint,
           FaceUnlock ,
@@ -168,38 +168,29 @@ const Oppo = () => {
     
     
           }
-    
-    
-    
-        // product sent to databse
-        fetch('http://localhost:5000/oppo', {
-      method: 'POST', // or 'PUT'
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(product),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-      alert('users added succesfully');
-      event.target.reset()
-    })
-    
-    
-    
-    
-    
-        
-    
-      }
+           // product sent to databse
+    fetch('http://localhost:5000/symphony', {
+        method: 'POST', // or 'PUT'
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(product),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        alert('users added succesfully');
+        // event.target.reset()
+      })
+
+        }
     return (
         <div className='mb-20 mt-96'>
          <div class="card w-full mx-auto bg-base-100 shadow-xl image-full ">
         <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4WQ1YB7D3Hqn9NJthxRc2AInVo8s6hPia3g&usqp=CAU" alt="Shoes" /></figure>
         <div class="card-body">
           <h2 class="card-title">Add Samsung Data</h2>
-         <form onSubmit={handleOppoUser} className='mt-1/2 grid grid-cols-4 gap-5'>
+         <form onSubmit={handleSymphonyUser} className='mt-1/2 grid grid-cols-4 gap-5'>
          <div>
          <input type="text" name='FirstRelease' placeholder="First Release Date" class="input input-bordered input-error w-full mx-auto mb-5" />
          <input type="text" name='price' placeholder="Product Price" class="input input-bordered input-error w-full  mx-auto mb-5 " />
@@ -262,7 +253,7 @@ const Oppo = () => {
        <input type="text" name='discoveredCountry' placeholder="discovered Country" class="input input-bordered input-error w-full mx-auto mb-5" />
 
        </div>
-       <button className='btn w-full btn-outline text-blue-600 font-bold font-mono'>Add Oppo Data in Database</button>
+       <button className='btn w-full btn-outline text-blue-600 font-bold font-mono'>Add Symphony Data in Database</button>
         
          </form>
         </div>
@@ -271,4 +262,4 @@ const Oppo = () => {
     );
 };
 
-export default Oppo;
+export default Symphonyyy;

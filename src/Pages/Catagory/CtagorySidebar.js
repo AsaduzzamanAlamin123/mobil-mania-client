@@ -36,7 +36,6 @@ const CtagorySidebar = ({children}) => {
             <li><NavLink className='btn btn-outline mb-5' to='/walton'><SiIconify></SiIconify> Walton</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/symphony'><SiConvertio></SiConvertio> Symphony</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/tecno'><RiContrastDropFill></RiContrastDropFill> Tecno</NavLink> </li>
-            <li><NavLink className='btn btn-outline mb-5' to='/walton'><MdOutlineInsertEmoticon></MdOutlineInsertEmoticon> Walton</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/oneplus'><FaSignInAlt></FaSignInAlt> One Plus</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/itel'><FaSadCry></FaSadCry> Itel</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/infinix'><MdOutline4GMobiledata></MdOutline4GMobiledata> Infinix</NavLink> </li>

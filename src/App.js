@@ -26,6 +26,7 @@ import Tecnooo from './Pages/DashBoard/AddService/Tecnooo';
 import Motorolaaa from './Pages/DashBoard/AddService/Motorolaaa';
 import Footer from './Pages/Home/Footer';
 import Oppo from './Pages/DashBoard/AddService/Oppo';
+import Symphonyyy from './Pages/DashBoard/AddService/Symphonyyy';
 
 
 
@@ -55,6 +56,7 @@ function App() {
               <Route path='oppo' element={<Oppo></Oppo>}></Route>
               <Route path='xiomiii' element={<Xiomiii></Xiomiii>}></Route>
               <Route path='nokiaaa' element={<Nokiaaa></Nokiaaa> }></Route>
+              <Route path='symphonyyy' element={<Symphonyyy></Symphonyyy> }></Route>
               <Route path='infinixxx' element={<Infinixxx></Infinixxx>}></Route>
               <Route path='waltonnn' element={<Waltonnn></Waltonnn>}></Route>
               <Route path='realmeee' element={<Realmeee></Realmeee>}></Route>
@@ -63,7 +65,6 @@ function App() {
               <Route path='vivooo' element={<Vivooo></Vivooo>}></Route>
               <Route path='tecnooo' element={<Tecnooo></Tecnooo>}></Route>
               <Route path='motorolaaa' element={<Motorolaaa></Motorolaaa>}></Route>
-              
               <Route path='add-admin' element={<AddAdmin></AddAdmin>}></Route>
             </Route>
           </Route>
