@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import OppoShow from './OppoShow';
 
 const Oppo = () => {
@@ -15,6 +16,7 @@ const Oppo = () => {
                     oppoData?.map(singled => <OppoShow key={singled._id} singled={singled}></OppoShow>)
                 }
             </div>
+            <h2 className='text-center font-thin font-mono text-blue-700 mt-5 mb-5'> <Link  to='/catagory'>back to catagory</Link></h2>
         </div>
     );
 };

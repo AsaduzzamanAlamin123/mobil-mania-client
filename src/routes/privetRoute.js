@@ -1,11 +1,14 @@
 import Test from "../componants/Test/Test";
 import About from "../Pages/About/About";
 import Catagory from "../Pages/Catagory/Catagory";
+import Infinix from "../Pages/Catagory/Infinix/Infinix";
+import InfinixDet from "../Pages/Catagory/Infinix/InfinixDet";
 import Iphone from "../Pages/Catagory/Iphone/Iphone";
 import IphoneDetailes from "../Pages/Catagory/Iphone/IphoneDetailes";
+import Itel from "../Pages/Catagory/Itel/Itel";
+import ItelDet from "../Pages/Catagory/Itel/ItelDet";
 import OnePlus from "../Pages/Catagory/OnePlus/OnePlus";
 import OnePlusDet from "../Pages/Catagory/OnePlus/OnePlusDet";
-
 import Oppo from "../Pages/Catagory/Oppo/Oppo";
 import OppoShowDetailes from "../Pages/Catagory/Oppo/OppoShowDetailes";
 import Realme from "../Pages/Catagory/Realme/Realme";
@@ -50,6 +53,10 @@ export const privetRoute = [
     { path : '/tecno/:tecnoId' , name:"TecnoDet" , Componant: TecnoDet},
     { path : '/oneplus' , name:"OnePlus" , Componant: OnePlus},
     { path : '/oneplus/:oneplusId' , name:"OnePlusDet" , Componant: OnePlusDet},
+    { path : '/itel' , name:"Itel" , Componant: Itel},
+    { path : '/itel/:itelId' , name:"ItelDet" , Componant: ItelDet},
+    { path : '/infinix' , name:"Infinix" , Componant: Infinix},
+    { path : '/infinix/:infinixId' , name:"InfinixDet" , Componant: InfinixDet},
     
 ]
 

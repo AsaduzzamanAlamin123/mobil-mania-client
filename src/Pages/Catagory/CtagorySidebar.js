@@ -30,11 +30,12 @@ const CtagorySidebar = ({children}) => {
             <li><NavLink className='btn btn-outline mb-5' to='/iphone'><FcIphone className='text-xl'></FcIphone>Iphone</NavLink></li>
             <li><NavLink className='btn btn-outline mb-5' to='/samsung'><SiSamsung className='text-xl'></SiSamsung> Samsung</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/oppo'><MdCropPortrait></MdCropPortrait> Oppo</NavLink> </li>
-            <li><NavLink className='btn btn-outline mb-5' to='/xiomi'><BiMobileVibration></BiMobileVibration> Xiaomi</NavLink> </li>
+           
             <li><NavLink className='btn btn-outline mb-5' to='/vivo'><HiOutlineDeviceMobile></HiOutlineDeviceMobile> Vivo</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/realme'><Md1XMobiledata></Md1XMobiledata> Realme</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/walton'><SiIconify></SiIconify> Walton</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/symphony'><SiConvertio></SiConvertio> Symphony</NavLink> </li>
+            <li><NavLink className='btn btn-outline mb-5' to='/xiomi'><BiMobileVibration></BiMobileVibration> Xiaomi</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/tecno'><RiContrastDropFill></RiContrastDropFill> Tecno</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/oneplus'><FaSignInAlt></FaSignInAlt> One Plus</NavLink> </li>
             <li><NavLink className='btn btn-outline mb-5' to='/itel'><FaSadCry></FaSadCry> Itel</NavLink> </li>

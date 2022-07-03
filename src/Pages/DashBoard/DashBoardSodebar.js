@@ -27,7 +27,7 @@ const DashBoardSodebar = ({children}) => {
     <li><NavLink className='mb-0.5' to='/dashboard/iphoneee'>Iphone</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/samsunggg'>Samsung</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/oppo'>Oppo</NavLink></li>
-    <li><NavLink className='mb-0.5' to='/dashboard/xiomi'>Xiomi</NavLink></li>
+    <li><NavLink className='mb-0.5' to='/dashboard/xiomiii'>Xiomi</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/nokiaaa'>Nokia</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/symphonyyy'>Symphony</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/infinixxx'>Infinix</NavLink></li>

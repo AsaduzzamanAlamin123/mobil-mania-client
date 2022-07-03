@@ -194,11 +194,11 @@ const Vivooo = () => {
 
   }
     return (
-        <div className='mb-20 mt-72'>
+        <div className='mb-20 mt-96'>
         <div class="card w-full mx-auto bg-base-100 shadow-xl image-full ">
        <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA55HXnYTktw40rrS8DA0lLoK4F7pFLdVk3Q&usqp=CAU" alt="Shoes" /></figure>
        <div class="card-body">
-         <h2 class="card-title">Add Samsung Data</h2>
+         <h2 class="card-title">Add Vivo Data</h2>
         <form onSubmit={handleVivoUser} className='mt-1/2 grid grid-cols-4 gap-5'>
         <div>
         <input type="text" name='FirstRelease' placeholder="First Release Date" class="input input-bordered input-error w-full mx-auto mb-5" />

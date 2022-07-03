@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Iphoneee = () => {
   const handleIphoneUser = event =>{
@@ -175,7 +177,8 @@ const Iphoneee = () => {
 .then(response => response.json())
 .then(data => {
   console.log('Success:', data);
-  alert('users added succesfully');
+  // alert('users added succesfully');
+  toast('data add successfull')
   // event.target.reset()
 })
 
@@ -186,9 +189,10 @@ const Iphoneee = () => {
     
 
   }
+ 
   
     return (
-        <div className='mb-20 mt-72'>
+        <div className='mb-20 mt-96'>
          <div class="card w-full mx-auto bg-base-100 shadow-xl image-full ">
         <figure><img src="https://cdn.mos.cms.futurecdn.net/BMX8kqnKVR6HjzbCYPyJNh.jpg" alt="Shoes" /></figure>
         <div class="card-body">
@@ -258,6 +262,7 @@ const Iphoneee = () => {
        <button className='btn w-full btn-outline text-blue-600 font-bold font-mono'>Add Samsung Data in Database</button>
         
          </form>
+         <ToastContainer></ToastContainer>
         </div>
       </div>
        </div>

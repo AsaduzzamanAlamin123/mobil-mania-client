@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import useFakeData from '../../../hooks/useAdmin';
 
@@ -27,6 +28,7 @@ const Samsung = () => {
                 samsungData.map(single=><SamsungShow single={single}></SamsungShow>)
             }
            </div>
+           <h2 className='text-center font-thin font-mono text-blue-700 mt-5 mb-5'> <Link  to='/catagory'>back to catagory</Link></h2>
         </div>
     );
 };

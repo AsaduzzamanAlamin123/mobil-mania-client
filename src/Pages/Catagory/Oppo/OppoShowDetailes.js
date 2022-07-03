@@ -428,7 +428,7 @@ const OppoShowDetailes = () => {
  
    </div>
    <div>
-     <p className='text-center font-thin font-mono text-blue-700 mt-5 mb-5 link link-secondary'><Link  to='/samsung'>Back to previus page</Link></p>
+     <p className='text-center font-thin font-mono text-blue-700 mt-5 mb-5 link link-secondary'><Link  to='/oppo'>Back to previus page</Link></p>
    </div>
    
   </div>

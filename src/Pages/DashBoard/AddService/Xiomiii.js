@@ -194,7 +194,7 @@ const Xiomiii = () => {
 
   }
     return (
-        <div className='mb-20 mt-96'>
+        <div className='mb-20 mt-'>
          <div class="card w-full mx-auto bg-base-100 shadow-xl image-full ">
         <figure><img className='' src="https://wallpaperaccess.com/full/2061823.jpg" alt="Shoes" /></figure>
         <div class="card-body">
