@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Tecnooo = () => {
   const handleTecnoUser = event =>{
@@ -179,17 +181,18 @@ fetch('http://localhost:5000/tecno', {
   .then(response => response.json())
   .then(data => {
     console.log('Success:', data);
-    alert('users added succesfully');
+    // alert('users added succesfully');
+    toast('add successfully tecno data')
     // event.target.reset()
   })
 
     }
     return (
-        <div className='mb-20 mt-72'>
+        <div className='mb-20 mt-96'>
         <div class="card w-full mx-auto bg-base-100 shadow-xl image-full ">
        <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqrNzaE_EYwl_A-WiQm5KVt733gDpdzlgtA&usqp=CAU" alt="Shoes" /></figure>
        <div class="card-body">
-         <h2 class="card-title">Add Samsung Data</h2>
+         <h2 class="card-title">Add Tecno Data</h2>
         <form onSubmit={handleTecnoUser} className='mt-1/2 grid grid-cols-4 gap-5'>
         <div>
         <input type="text" name='FirstRelease' placeholder="First Release Date" class="input input-bordered input-error w-full mx-auto mb-5" />
@@ -255,6 +258,7 @@ fetch('http://localhost:5000/tecno', {
       <button className='btn w-full btn-outline text-blue-600 font-bold font-mono'>Add Tecno Data in Database</button>
        
         </form>
+        <ToastContainer></ToastContainer>
        </div>
      </div>
       </div>

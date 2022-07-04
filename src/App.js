@@ -19,7 +19,7 @@ import Nokiaaa from './Pages/DashBoard/AddService/Nokiaaa';
 import Infinixxx from './Pages/DashBoard/AddService/Infinixxx';
 import Waltonnn from './Pages/DashBoard/AddService/Waltonnn';
 import Realmeee from './Pages/DashBoard/AddService/Realmeee';
-import OnePlusss from './Pages/DashBoard/AddService/OnePlusss';
+
 import Itelll from './Pages/DashBoard/AddService/Itellll';
 import Vivooo from './Pages/DashBoard/AddService/Vivooo';
 import Tecnooo from './Pages/DashBoard/AddService/Tecnooo';
@@ -60,7 +60,7 @@ function App() {
               <Route path='infinixxx' element={<Infinixxx></Infinixxx>}></Route>
               <Route path='waltonnn' element={<Waltonnn></Waltonnn>}></Route>
               <Route path='realmeee' element={<Realmeee></Realmeee>}></Route>
-              <Route path='oneplusss' element={<OnePlusss></OnePlusss>}></Route>
+              
               <Route path='itelll' element={<Itelll></Itelll>}></Route>
               <Route path='vivooo' element={<Vivooo></Vivooo>}></Route>
               <Route path='tecnooo' element={<Tecnooo></Tecnooo>}></Route>

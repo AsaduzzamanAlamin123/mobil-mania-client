@@ -23,7 +23,7 @@ const DashBoardSodebar = ({children}) => {
            
 <div class="dropdown">
   <label tabindex="0" class="btn w-full  btn-outline ">Add Service</label>
-  <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+  <ul tabindex="0" class="dropdown-content menu p-2 mb-20 shadow bg-base-100 rounded-box w-52">
     <li><NavLink className='mb-0.5' to='/dashboard/iphoneee'>Iphone</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/samsunggg'>Samsung</NavLink></li>
     <li><NavLink className='mb-0.5' to='/dashboard/oppo'>Oppo</NavLink></li>

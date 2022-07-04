@@ -7,8 +7,7 @@ import Iphone from "../Pages/Catagory/Iphone/Iphone";
 import IphoneDetailes from "../Pages/Catagory/Iphone/IphoneDetailes";
 import Itel from "../Pages/Catagory/Itel/Itel";
 import ItelDet from "../Pages/Catagory/Itel/ItelDet";
-import OnePlus from "../Pages/Catagory/OnePlus/OnePlus";
-import OnePlusDet from "../Pages/Catagory/OnePlus/OnePlusDet";
+
 import Oppo from "../Pages/Catagory/Oppo/Oppo";
 import OppoShowDetailes from "../Pages/Catagory/Oppo/OppoShowDetailes";
 import Realme from "../Pages/Catagory/Realme/Realme";
@@ -51,8 +50,7 @@ export const privetRoute = [
     { path : '/symphony/:symphonyId' , name:"SymphonyDet" , Componant: SymphonyDet},
     { path : '/tecno' , name:"Tecno" , Componant: Tecno},
     { path : '/tecno/:tecnoId' , name:"TecnoDet" , Componant: TecnoDet},
-    { path : '/oneplus' , name:"OnePlus" , Componant: OnePlus},
-    { path : '/oneplus/:oneplusId' , name:"OnePlusDet" , Componant: OnePlusDet},
+  
     { path : '/itel' , name:"Itel" , Componant: Itel},
     { path : '/itel/:itelId' , name:"ItelDet" , Componant: ItelDet},
     { path : '/infinix' , name:"Infinix" , Componant: Infinix},

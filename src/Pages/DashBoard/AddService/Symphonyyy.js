@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Symphonyyy = () => {
     const handleSymphonyUser = event =>{
@@ -179,8 +181,9 @@ const Symphonyyy = () => {
       .then(response => response.json())
       .then(data => {
         console.log('Success:', data);
-        alert('users added succesfully');
-        // event.target.reset()
+        // alert('users added succesfully');
+        toast('add successfully symphony data')
+         event.target.reset()
       })
 
         }
@@ -189,7 +192,7 @@ const Symphonyyy = () => {
          <div class="card w-full mx-auto bg-base-100 shadow-xl image-full ">
         <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4WQ1YB7D3Hqn9NJthxRc2AInVo8s6hPia3g&usqp=CAU" alt="Shoes" /></figure>
         <div class="card-body">
-          <h2 class="card-title">Add Samsung Data</h2>
+          <h2 class="card-title">Add Symphony Data</h2>
          <form onSubmit={handleSymphonyUser} className='mt-1/2 grid grid-cols-4 gap-5'>
          <div>
          <input type="text" name='FirstRelease' placeholder="First Release Date" class="input input-bordered input-error w-full mx-auto mb-5" />
@@ -256,6 +259,7 @@ const Symphonyyy = () => {
        <button className='btn w-full btn-outline text-blue-600 font-bold font-mono'>Add Symphony Data in Database</button>
         
          </form>
+         <ToastContainer></ToastContainer>
         </div>
       </div>
        </div>

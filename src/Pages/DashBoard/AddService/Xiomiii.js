@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Xiomiii = () => {
   const handleXiomiUser = event =>{
@@ -182,7 +184,8 @@ const Xiomiii = () => {
 .then(response => response.json())
 .then(data => {
   console.log('Success:', data);
-  alert('users added succesfully');
+  // alert('users added succesfully');
+  toast('add successfully xiomi data')
   event.target.reset()
 })
 
@@ -194,11 +197,11 @@ const Xiomiii = () => {
 
   }
     return (
-        <div className='mb-20 mt-'>
+        <div className='mb-20 mt-96'>
          <div class="card w-full mx-auto bg-base-100 shadow-xl image-full ">
-        <figure><img className='' src="https://wallpaperaccess.com/full/2061823.jpg" alt="Shoes" /></figure>
+        <figure><img className='' src="https://besthqwallpapers.com/Uploads/21-6-2019/96185/thumb-xiaomi-logo-gray-shiny-logo-xiaomi-metal-emblem-wallpaper-for-xiaomi-smartphones-gray-carbon-fiber-texture.jpg" alt="Shoes" /></figure>
         <div class="card-body">
-          <h2 class="card-title">Add Samsung Data</h2>
+          <h2 class="card-title">Add Xiomi Data</h2>
          <form onSubmit={handleXiomiUser} className='mt-1/2 grid grid-cols-4 gap-5'>
          <div>
          <input type="text" name='FirstRelease' placeholder="First Release Date" class="input input-bordered input-error w-full mx-auto mb-5" />
@@ -264,6 +267,7 @@ const Xiomiii = () => {
        <button className='btn w-full btn-outline text-blue-600 font-bold font-mono'>Add Xiomi Data in Database</button>
         
          </form>
+         <ToastContainer></ToastContainer>
         </div>
       </div>
        </div>
