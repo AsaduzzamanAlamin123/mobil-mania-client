@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Waltonnn = () => {
   const handleWaltonUser = event =>{
     event.preventDefault();
@@ -182,7 +183,8 @@ const Waltonnn = () => {
 .then(response => response.json())
 .then(data => {
   console.log('Success:', data);
-  alert('users added succesfully');
+  // alert('users added succesfully');
+  toast('add successfully walton data')
   event.target.reset()
 })
 
@@ -194,11 +196,11 @@ const Waltonnn = () => {
 
   }
     return (
-        <div className='mb-20 mt-72'>
+        <div className='mb-20 mt-96'>
          <div class="card w-full mx-auto bg-base-100 shadow-xl image-full ">
         <figure><img src="https://images.thedailystar.net/sites/default/files/images/2022/01/21/walton.jpg" alt="Shoes" /></figure>
         <div class="card-body">
-          <h2 class="card-title">Add Samsung Data</h2>
+          <h2 class="card-title">Add Walton Data</h2>
          <form onSubmit={handleWaltonUser} className='mt-1/2 grid grid-cols-4 gap-5'>
          <div>
          <input type="text" name='FirstRelease' placeholder="First Release Date" class="input input-bordered input-error w-full mx-auto mb-5" />
@@ -264,6 +266,7 @@ const Waltonnn = () => {
        <button className='btn w-full btn-outline text-blue-600 font-bold font-mono'>Add Walton Data in Database</button>
         
          </form>
+         <ToastContainer></ToastContainer>
         </div>
       </div>
        </div>
