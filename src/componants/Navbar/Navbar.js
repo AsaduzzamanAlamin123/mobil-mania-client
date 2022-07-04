@@ -1,10 +1,18 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import {  NavLink, useLocation } from 'react-router-dom';
+import auth from '../../firebase.init';
 import useAdmin from '../../hooks/useAdmin';
 
 const Navbar = ({children}) => {
   const [admin] = useAdmin();
   const {pathname} = useLocation()
+  const [user, loading, error] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+  };
+  
     return (
         <div class="drawer drawer-end">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
@@ -37,7 +45,12 @@ const Navbar = ({children}) => {
                 
                 <li><NavLink className='rounded-lg' to='/catagory'>Catagory</NavLink></li>
                 <li><NavLink className='rounded-lg' to='/about'>About</NavLink></li>
-                <li><NavLink className='rounded-lg' to='/login'>Log In</NavLink></li>
+                {
+                  user ? <button onClick={logout} className='btn btn-primary btn-outline'>Log Out</button>
+                   :
+                  <li><NavLink  className='rounded-lg' to='/login'>Log In</NavLink></li>
+                }
+                <li><NavLink  className='rounded-lg' to='/signup'>SignUp</NavLink></li>
                
                 
               </ul>
@@ -57,7 +70,11 @@ const Navbar = ({children}) => {
                 
                 <li><NavLink className='rounded-lg' to='/catagory'>Catagory</NavLink></li>
                 <li><NavLink className='rounded-lg' to='/about'>About</NavLink></li>
-                <li><NavLink className='rounded-lg' to='/login'>Log In</NavLink></li>
+                {
+                  user ? <button onClick={logout} className='btn btn-primary btn-outline'>Log Out</button>
+                   :
+                  <li><NavLink onClick={logout} className='rounded-lg' to='/login'>Log In</NavLink></li>
+                }
 
                 <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
   <div class="collapse-title text-xl font-medium">
