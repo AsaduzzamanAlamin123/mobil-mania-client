@@ -174,7 +174,7 @@ const Oppo = () => {
     
     
         // product sent to databse
-        fetch('http://localhost:5000/oppo', {
+        fetch('https://afternoon-journey-31295.herokuapp.com/oppo', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',

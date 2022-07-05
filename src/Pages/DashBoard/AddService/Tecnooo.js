@@ -171,7 +171,7 @@ const Tecnooo = () => {
 
       }
        // product sent to databse
-fetch('http://localhost:5000/tecno', {
+fetch('https://afternoon-journey-31295.herokuapp.com/tecno', {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',

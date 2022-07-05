@@ -171,7 +171,7 @@ const Itellll = () => {
 
       }
        // product sent to databse
-fetch('http://localhost:5000/itel', {
+fetch('https://afternoon-journey-31295.herokuapp.com/itel', {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',

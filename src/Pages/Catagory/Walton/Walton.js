@@ -4,7 +4,7 @@ import WaltonShow from './WaltonShow';
 const Walton = () => {
     const [waltons , setWaltons] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/waltons')
+        fetch('https://afternoon-journey-31295.herokuapp.com/waltons')
         .then(res=>res.json())
         .then(data=>setWaltons(data));
     },[])

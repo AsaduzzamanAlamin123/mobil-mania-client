@@ -172,7 +172,7 @@ const Samsunggg = () => {
 
 
     // product sent to databse
-    fetch('http://localhost:5000/samsung', {
+    fetch('https://afternoon-journey-31295.herokuapp.com/samsung', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',

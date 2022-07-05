@@ -4,7 +4,7 @@ import InfinixShow from './InfinixShow';
 const Infinix = () => {
     const [infinix , setInfinix] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/itels')
+        fetch('https://afternoon-journey-31295.herokuapp.com/itels')
         .then(res=>res.json())
         .then(data=>setInfinix(data));
     },[])

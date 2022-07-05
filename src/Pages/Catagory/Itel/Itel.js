@@ -4,7 +4,7 @@ import ItelShow from '../Itel/ItelShow'
 const Itel = () => {
     const [itels , setItels] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/itels')
+        fetch('https://afternoon-journey-31295.herokuapp.com/itels')
         .then(res=>res.json())
         .then(data=>setItels(data));
     },[])

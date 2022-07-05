@@ -6,7 +6,7 @@ const IphoneShow = ({iphone}) => {
     const {name , picture , quantity , rating ,price , Network , _id} = iphone;
     return (
       <div>
-      <div class="card w-full h-96  bg-base-100 shadow-xl" >
+      <div class="card w-full h-96  bg-base-100 shadow-xl " >
 <figure><img className='h-36' src={picture} alt="Shoes" /></figure>
 <div class="card-body container">
 <h2 class="text-center font-bold font-mono text-lime-900 text-4xl"  title={name}>{name.slice(0,20)}!</h2>

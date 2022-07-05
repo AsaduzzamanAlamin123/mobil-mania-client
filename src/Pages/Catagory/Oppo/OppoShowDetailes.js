@@ -8,7 +8,7 @@ const OppoShowDetailes = () => {
     const [detailes , setDetailes]= useState({})
     console.log(detailes);
     useEffect(()=>{
-        fetch(`http://localhost:5000/oppos/${oppoId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/oppos/${oppoId}`)
         .then(res=>res.json())
         .then(data=>setDetailes(data))
 

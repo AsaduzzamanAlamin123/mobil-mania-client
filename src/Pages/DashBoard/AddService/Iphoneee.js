@@ -167,7 +167,7 @@ const Iphoneee = () => {
 
 
     // product sent to databse
-    fetch('http://localhost:5000/iphone', {
+    fetch('https://afternoon-journey-31295.herokuapp.com/iphone', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',

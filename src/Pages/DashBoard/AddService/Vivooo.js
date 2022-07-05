@@ -175,7 +175,7 @@ const Vivooo = () => {
 
 
     // product sent to databse
-    fetch('http://localhost:5000/vivo', {
+    fetch('https://afternoon-journey-31295.herokuapp.com/vivo', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',

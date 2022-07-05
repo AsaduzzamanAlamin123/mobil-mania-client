@@ -6,7 +6,7 @@ import IphoneShow from './IphoneShow';
 const Iphone = () => {
     const [iphones , setIphones] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/iphones')
+        fetch('https://afternoon-journey-31295.herokuapp.com/iphones')
         .then(res=>res.json())
         .then(data => setIphones(data))
     },[])

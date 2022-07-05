@@ -174,7 +174,7 @@ const Xiomiii = () => {
 
 
     // product sent to databse
-    fetch('http://localhost:5000/xiomi', {
+    fetch('https://afternoon-journey-31295.herokuapp.com/xiomi', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',

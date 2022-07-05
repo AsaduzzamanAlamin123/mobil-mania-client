@@ -5,7 +5,7 @@ import OppoShow from './OppoShow';
 const Oppo = () => {
     const [oppoData , setOppoData] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/oppos')
+        fetch('https://afternoon-journey-31295.herokuapp.com/oppos')
         .then(res=>res.json())
         .then(data=>setOppoData(data))
     },[])

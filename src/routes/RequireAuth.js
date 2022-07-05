@@ -7,10 +7,12 @@ import Loading from '../componants/Shared/Loading/Loading';
 
 
 const RequireAuth = () => {
-    const [sendEmailVerification, sending, verror] = useSendEmailVerification(auth);
+    const [sendEmailVerification, isLoading, verror] = useSendEmailVerification(auth);
     const location = useLocation()
     const [user, loading, error] = useAuthState(auth);
     console.log(user);
+
+
     if(loading){
         return <Loading></Loading>
     }
@@ -20,6 +22,10 @@ const RequireAuth = () => {
     if(!user){
         return <Navigate to='/login' state={{ from: location}} replace/>
     }
+
+    if(isLoading){
+      return <Loading></Loading>
+  }
 
     if(!user.emailVerified){
         return <div>

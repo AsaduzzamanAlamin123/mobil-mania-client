@@ -174,7 +174,7 @@ const Realmeee = () => {
 
 
     // product sent to databse
-    fetch('http://localhost:5000/realme', {
+    fetch('https://afternoon-journey-31295.herokuapp.com/realme', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',

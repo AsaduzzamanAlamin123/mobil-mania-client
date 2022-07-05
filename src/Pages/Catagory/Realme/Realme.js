@@ -4,7 +4,7 @@ import RealmeShow from './RealmeShow';
 const Realme = () => {
     const [realmes , setRealmes] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/realmes')
+        fetch('https://afternoon-journey-31295.herokuapp.com/realmes')
         .then(res=>res.json())
         .then(data=>setRealmes(data))
     },[])

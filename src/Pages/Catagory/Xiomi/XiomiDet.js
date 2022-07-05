@@ -5,7 +5,7 @@ const XiomiDet = () => {
     const [detailes , setDetailes] = useState({});
     const {xiomiId} = useParams();
     useEffect(()=>{
-        fetch(`http://localhost:5000/xiomis/${xiomiId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/xiomis/${xiomiId}`)
         .then(res=>res.json())
         .then(data=>setDetailes(data))
     },[])

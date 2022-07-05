@@ -4,7 +4,7 @@ import VivoShow from './VivoShow';
 const Vivo = () => {
     const [vivoData , setVivoData] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/vivos')
+        fetch('https://afternoon-journey-31295.herokuapp.com/vivos')
         .then(res=>res.json())
         .then(data=> setVivoData(data))
     },[])

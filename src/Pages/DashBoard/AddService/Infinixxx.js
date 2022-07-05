@@ -170,7 +170,7 @@ const Infinixxx = () => {
 
 
     // product sent to databse
-    fetch('http://localhost:5000/infinix', {
+    fetch('https://afternoon-journey-31295.herokuapp.com/infinix', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',

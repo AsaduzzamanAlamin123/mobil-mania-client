@@ -7,7 +7,7 @@ const WaltonDet = () => {
    
     
     useEffect(()=>{
-        fetch(`http://localhost:5000/waltons/${waltonId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/waltons/${waltonId}`)
         .then(res=>res.json())
         .then(data=>setDetailes(data))
     },[])

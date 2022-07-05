@@ -4,7 +4,7 @@ import SymphonyShow from './SymphonyShow';
 const Symphony = () => {
     const [symphonyData , setSymphonyData] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/symphonys')
+        fetch('https://afternoon-journey-31295.herokuapp.com/symphonys')
         .then(res=>res.json())
         .then(data=>setSymphonyData(data))
     },[])

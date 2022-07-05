@@ -8,7 +8,7 @@ const VivoShowDet = () => {
    
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/vivos/${vivoId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/vivos/${vivoId}`)
         .then(res=>res.json())
         .then(data=>setDetailes(data))
     },[])

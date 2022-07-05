@@ -173,7 +173,7 @@ const Waltonnn = () => {
 
 
     // product sent to databse
-    fetch('http://localhost:5000/walton', {
+    fetch('https://afternoon-journey-31295.herokuapp.com/walton', {
   method: 'POST', // or 'PUT'
   headers: {
     'Content-Type': 'application/json',

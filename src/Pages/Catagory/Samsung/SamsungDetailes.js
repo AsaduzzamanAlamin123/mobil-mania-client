@@ -7,7 +7,7 @@ const SamsungDetailes = () => {
     const { samsungId } = useParams();
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/samsungs/${samsungId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/samsungs/${samsungId}`)
         .then(res=>res.json())
         .then(data=>setDetailes(data))
     },[])

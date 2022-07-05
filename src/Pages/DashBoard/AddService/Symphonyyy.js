@@ -171,7 +171,7 @@ const Symphonyyy = () => {
     
           }
            // product sent to databse
-    fetch('http://localhost:5000/symphony', {
+    fetch('https://afternoon-journey-31295.herokuapp.com/symphony', {
         method: 'POST', // or 'PUT'
         headers: {
           'Content-Type': 'application/json',

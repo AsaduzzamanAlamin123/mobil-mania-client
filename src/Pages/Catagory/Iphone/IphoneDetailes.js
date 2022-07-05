@@ -7,7 +7,7 @@ const IphoneDetailes = () => {
     const [detailes , setDetailes] = useState({});
     console.log(detailes);
     useEffect(()=>{
-        fetch(`http://localhost:5000/iphones/${iphoneId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/iphones/${iphoneId}`)
         .then(res=>res.json())
         .then(data => setDetailes(data))
     },[])

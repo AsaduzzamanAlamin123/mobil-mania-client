@@ -5,7 +5,7 @@ import TecnoShow from './TecnoShow';
 const Tecno = () => {
     const [tecnosData , seTecnosData] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/tecnos')
+        fetch('https://afternoon-journey-31295.herokuapp.com/tecnos')
         .then(res=>res.json())
         .then(data => seTecnosData(data))
     },[])

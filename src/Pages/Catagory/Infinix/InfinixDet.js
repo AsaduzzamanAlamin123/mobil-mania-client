@@ -8,7 +8,7 @@ const InfinixDet = () => {
     console.log(detailes);
     useEffect(()=>{
 
-        fetch(`http://localhost:5000/infinixs/${infinixId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/infinixs/${infinixId}`)
         .then(res=>res.json())
         .then(data => setDetailes(data))
     },[infinixId])

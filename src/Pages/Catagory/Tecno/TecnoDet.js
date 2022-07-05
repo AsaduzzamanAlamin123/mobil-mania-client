@@ -6,7 +6,7 @@ const TecnoDet = () => {
     const [detailes , setDetailes]= useState({})
     console.log(detailes);
     useEffect(()=>{
-        fetch(`http://localhost:5000/tecnos/${tecnoId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/tecnos/${tecnoId}`)
         .then(res=>res.json())
         .then(data=>setDetailes(data))
 

@@ -12,7 +12,7 @@ const Samsung = () => {
    
     const [samsungData , setSamsungData] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/samsungs')
+        fetch('https://afternoon-journey-31295.herokuapp.com/samsungs')
         .then(res=>res.json())
         .then(data=> setSamsungData(data))
     },[])

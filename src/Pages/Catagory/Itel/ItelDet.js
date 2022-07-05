@@ -6,7 +6,7 @@ const ItelDet = () => {
     const [detailes , setDetailes] = useState({});
     console.log(detailes);
     useEffect(()=>{
-        fetch(`http://localhost:5000/itels/${itelId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/itels/${itelId}`)
         .then(res=>res.json())
         .then(data => setDetailes(data))
     },[])

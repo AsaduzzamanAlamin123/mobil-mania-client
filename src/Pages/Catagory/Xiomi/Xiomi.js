@@ -4,7 +4,7 @@ import XiomiShow from './XiomiShow';
 const Xiomi = () => {
     const [xiomiData , setXioniData] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/xiomis')
+        fetch('https://afternoon-journey-31295.herokuapp.com/xiomis')
         .then(res=>res.json())
         .then(data=> setXioniData(data))
     },[])

@@ -9,7 +9,7 @@ const RealmeDet = () => {
 
     useEffect(()=>{
 
-        fetch(`http://localhost:5000/realmes/${realmeId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/realmes/${realmeId}`)
         .then(res=>res.json())
         .then(data=>setDetailes(data))
     },[])

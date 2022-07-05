@@ -8,7 +8,7 @@ const SymphonyDet = () => {
     const [detailes , setDetailes]= useState({})
     console.log(detailes);
     useEffect(()=>{
-        fetch(`http://localhost:5000/aynohonys/${symphonyId}`)
+        fetch(`https://afternoon-journey-31295.herokuapp.com/aynohonys/${symphonyId}`)
         .then(res=>res.json())
         .then(data=>setDetailes(data))
 

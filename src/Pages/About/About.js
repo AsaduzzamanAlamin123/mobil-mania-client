@@ -18,9 +18,9 @@ const About = () => {
            
   <div class="hero-content flex-col lg:flex-row">
     <img className='rounded-lg' src="https://cdn.mos.cms.futurecdn.net/x6CKadQhsnwUUonx3P4jR9.jpg" />
-    <div className=' h-full w-full'>
+    <div className=' h-full w-full  rounded-lg  pl-2 pr-2'>
       
-      <p class="py-6 font-mono text-secondary">Poshmark is more than just a shopping destination, it's a vibrant community powered by millions of sellers who not only sell their personal style, but also curate looks for their shoppers, creating one of the most connected shopping experiences in the world. Join us!Poshmark is more than just a shopping destination, it's a vibrant community powered by millions of sellers who not only sell their personal style, but also curate looks for their shoppers, creating one of the most connected shopping experiences in the world. Join us!Poshmark is more than just a shopping destination, it's a vibrant community powered by millions of sellers who not only sell their personal style, but also curate looks for their shoppers, creating one of the most connected shopping experiences in the world. Join us!.</p>
+      <p class="py-6 font-mono text-secondary">Poshmark is more than just a shopping destination, it's a vibrant community powered by millions of sellers who not only sell their personal style, but also curate looks for their shoppers, creating one of the most connected shopping experiences in the world. Join us!Poshmark is more than just a shopping destination, it's a vibrant community powered by millions of sellers who not only sell their personal style, but also curate looks for their shoppers, creating one of the most connected shopping experiences in the world. Join us!Poshmark is more than just a shopping destination, it's a vibrant community powered by millions of sellers who not only sell their personal style, but also curate looks for their shoppers, creating .</p>
       
     </div>
   </div>
