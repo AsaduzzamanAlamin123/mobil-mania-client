@@ -5,7 +5,7 @@ import mobile3 from '../../images/mobile4.webp'
 
 const Cardh = () => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  mt-10 mb-20 sm:mb-10 sm:ml-24 '>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  mt-10 mb-20 sm:mb-10 ml-2 sm:ml-24 mr-2 sm:mr-10 '>
             <div class="card card-compact w-full sm:w-96 bg-base-100 shadow-xl ">
   <figure><img src={mobile3} className='h-56 w-96' alt="Shoes" /></figure>
   <div class="card-body">

@@ -6,6 +6,7 @@ import { useAuthState,  useSignInWithEmailAndPassword,  useSignInWithGoogle } fr
 import auth from '../../firebase.init';
 import Loading from '../../componants/Shared/Loading/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import PageTitle from '../../componants/Shared/PageTitle/PageTitle';
 
 
 const Login = () => {
@@ -77,8 +78,9 @@ let from = location.state?.from?.pathname || "/";
     return <Loading></Loading>
   }
     return (
-        <div className='flex h-screen justify-center bg-accent items-center' >
-            <div class="card w-96 bg-base-100 shadow-xl " data-aos="fade-down"
+        <div className='flex h-screen justify-center bg-accent items-center ' >
+          <PageTitle title='login'></PageTitle>
+            <div class="card w-96 bg-base-100 shadow-xl ml-4 sm:ml-0 mr-4 sm:mr-0" data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500">
         <div class="card-body">

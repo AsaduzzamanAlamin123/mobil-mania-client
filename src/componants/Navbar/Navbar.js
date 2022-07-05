@@ -80,12 +80,7 @@ const Navbar = ({children}) => {
   <div class="collapse-title text-xl font-medium">
     Book Now
   </div>
-  <div class="collapse-content"> 
-  <ul>
-  <li><NavLink className='mb-10' to='#'>Ouick Book</NavLink></li>
-   <li><NavLink to='#'>preboook</NavLink></li>
-  </ul>
-  </div>
+  
 </div>
             
           </ul>

@@ -25,10 +25,10 @@ const RequireAuth = () => {
         return <div>
             <p className='text-center mt-5'>Your Email is Not Verified</p>
             <p className='mt-5 text-green-800'> please Verify Your Email Adress</p>
-            <button
+            <button className='btn btn-outline'
         onClick={async () => {
           await sendEmailVerification();
-          alert('Sent email');
+          alert('Again email change');
         }}
       >
         Verify email

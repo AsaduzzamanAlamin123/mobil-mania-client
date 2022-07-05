@@ -6,16 +6,16 @@ import { Link } from 'react-router-dom';
 
 const Landing = () => {
     return (
-        <div class="hero min-h-screen " style={{
+        <div class="hero min-h-screen mr-4 sm:mr-0"style={{
             
            
-            background: `url(${bg}) no-repeat`,
-            height:'50%',
-            backgroundPosition: "center",
-            
-     
-      backgroundSize: 'cover'
-        }} >
+          background: `url(${bg}) no-repeat`,
+          height:'50%',
+          backgroundPosition: "center",
+          
+   
+    backgroundSize: 'cover'
+      }}  >
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="">
